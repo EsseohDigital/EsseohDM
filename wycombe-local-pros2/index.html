@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="google-site-verification" content="jbasMdcfV4MEW6WotNFB_bBozF1p2r6A-ZGX4ia_1dY" />
+    <meta name="description" content="Find trusted local tradespeople in High Wycombe. Get free quotes from vetted professionals for roofing, plumbing, electrical, and cleaning services in HP postcodes." />
+    <meta name="theme-color" content="#0d9488" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://wycombelocalpros.netlify.app/" />
+    <meta property="og:title" content="Wycombe Local Pros - High Wycombe's Trusted Trade Network" />
+    <meta property="og:description" content="Connect with vetted local roofers, plumbers, and electricians in High Wycombe (HP10-HP15). Fast, free quotes." />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1581578731117-104f2a41272c?auto=format&fit=crop&q=80&w=1200" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://wycombelocalpros.netlify.app/" />
+    <meta property="twitter:title" content="Wycombe Local Pros - Trusted Tradesmen" />
+    <meta property="twitter:description" content="Find trusted local tradespeople in High Wycombe. Get free quotes today." />
+    <meta property="twitter:image" content="https://images.unsplash.com/photo-1581578731117-104f2a41272c?auto=format&fit=crop&q=80&w=1200" />
+
+    <title>Wycombe Local Pros - Trusted Tradesmen in High Wycombe</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PLACEHOLDER"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      // Replace G-PLACEHOLDER with your actual Measurement ID
+      gtag('config', 'G-PLACEHOLDER');
+    </script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+            colors: {
+              // Updated to a Dark Turquoise / Teal palette
+              brand: {
+                50: '#f0fdfa',
+                100: '#ccfbf1',
+                200: '#99f6e4',
+                300: '#5eead4',
+                400: '#2dd4bf',
+                500: '#14b8a6', 
+                600: '#0d9488', // Primary Dark Turquoise
+                700: '#0f766e', 
+                800: '#115e59', 
+                900: '#134e4a',
+              },
+              primary: {
+                blue: '#4361ee', // The strong blue from the map overlay
+              },
+              // New Dark Red Accent Palette
+              accent: {
+                50: '#fef2f2',
+                100: '#fee2e2',
+                200: '#fecaca',
+                300: '#fca5a5',
+                400: '#f87171',
+                500: '#ef4444',
+                600: '#dc2626',
+                700: '#b91c1c', // Main Dark Red
+                800: '#991b1b',
+                900: '#7f1d1d',
+              }
+            },
+            animation: {
+              'fade-in': 'fadeIn 0.5s ease-out forwards',
+            },
+            keyframes: {
+              fadeIn: {
+                '0%': { opacity: '0', transform: 'translateY(10px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+    
+    <!-- Local Business Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Wycombe Local Pros",
+      "areaServed": {
+        "@type": "City",
+        "name": "High Wycombe"
+      },
+      "description": "Connecting High Wycombe homeowners with vetted local tradespeople for roofing, plumbing, and electrical work.",
+      "url": "https://wycombelocalpros.netlify.app",
+      "provider": {
+        "@type": "Organization",
+        "name": "Wycombe Local Pros",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "email": "support@wycombelocalpros.co.uk",
+          "contactType": "customer service"
+        }
+      }
+    }
+    </script>
+
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react-dom": "https://esm.sh/react-dom@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+    "react-router-dom": "https://esm.sh/react-router-dom@6.28.0?external=react,react-dom",
+    "@remix-run/router": "https://esm.sh/@remix-run/router@1.21.0",
+    "zod": "https://esm.sh/zod@3.22.4",
+    "react-hook-form": "https://esm.sh/react-hook-form@7.51.0?external=react,react-dom",
+    "@hookform/resolvers/zod": "https://esm.sh/@hookform/resolvers@3.3.4/zod?external=react,react-hook-form,zod",
+    "@hookform/resolvers/": "https://esm.sh/@hookform/resolvers@^5.2.2/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-white text-slate-900 antialiased">
+    <div id="root"></div>
+    
+    <!-- Netlify Form Detection (Hidden) -->
+    <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+      <input type="hidden" name="subject" />
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <select name="serviceType"></select>
+      <textarea name="message"></textarea>
+    </form>
+
+    <form name="quote-request" netlify netlify-honeypot="bot-field" hidden>
+      <input type="hidden" name="subject" />
+      <input type="text" name="postcode" />
+      <select name="serviceType"></select>
+      <input type="radio" name="urgency" />
+      <textarea name="description"></textarea>
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <input type="tel" name="phone" />
+    </form>
+    
+    <script type="module" src="./index.tsx"></script>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
